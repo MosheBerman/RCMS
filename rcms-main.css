@@ -1,0 +1,343 @@
+/*
+ *
+ *  Dark Blue  - #3AB7FF
+ *  Light Blue - #9BDCFF
+ *
+ */
+
+/* Reset the default the margin and padding of many elements to 0  for crossbrowser similarity */
+
+html, body, h1, h2, h3, h4, h5, h6, div{
+   margin: 0;
+   padding: 0;	   
+}
+	
+/* Center the contents opf the page and set default fonts and colors */	
+body{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 16px;    
+  background: #3AB7FF url("./img/bg.png");  
+  height: auto;
+}		
+
+/* When something goes wrong, use yellow colors to display a warning. */
+.yellow{
+   width: 500px;
+   background: #F5F1A8;
+   border: 1px solid #E0D100;
+   color: #E0D100;
+   text-align: center;
+}
+
+.errlink{text-decoration: none; color:#c00;}
+.errlink:hover{text-decoration: none; color: #f00;}
+	 
+/* center the center column, make it 760px wide */	 
+ #centercol{
+   display: block;
+   margin: 0 auto 0 auto;
+   text-align: center;	 
+   width: 760px;
+   background: #fff;  
+   height: auto; 
+ }
+ 
+ /* the topbar styles... */
+ 
+ #header{
+   display: block;
+   color: #fff;
+   background: #3AB7FF url("./img/topbar.png") bottom no-repeat;
+   height: 200px;
+}
+
+#header *{
+  display: none; /* hide searchable page header from overlaying graphic */
+}
+ 
+ /*
+ * 
+ * Navigation bar
+ * 
+ */
+ 
+ /* the left columns's styles */
+ #leftcol{
+   float: left;
+   width: 130px;
+   text-align: left;
+   padding:  0 10px 10px 10px;
+   background: inherit; 
+}
+
+/* remove the bullets from the navigation list */
+#leftcol ul{
+  list-style-type: none;
+   padding: 0; 
+   margin: 0;
+}
+
+
+/* set the width of each item in the navbar */
+#leftcol ul .nav, #leftcol ul .navtitle{
+  width: 120px;
+  display: block;
+  float: left;
+  text-align: center; 
+  font-weight: bold;
+  font-size: 1em; 
+  margin-bottom: 10px;  
+  /* border: dotted 1px #3AB7FF;   */
+}
+
+/* Underline the titles in the navbar */
+#leftcol ul .navtitle{
+  text-decoration:  underline;
+  color: #9BDCFF;     
+}
+
+/* each link in the navigation list */
+#leftcol .nav a, #leftcol .navtitle .homelink{
+  color: #3AB7FF;
+  text-decoration: none;
+  background-color: inherit;
+}
+
+/* when you hover a link, make it "light up" */
+#leftcol .nav a:hover, #leftcol .navtitle .homelink:hover{
+  color: #9BDCFF;
+}
+
+/* each link in the navigation list */
+#leftcol .nav .homelink{
+  display: none; 
+}
+
+/* The right 'column' styles */
+ #rightcol{
+   display: block;
+   float: left;
+   width: 598px;
+   padding:  0 5px 5px 5px;
+   background: inherit;   
+   text-align: center;
+   border-left: 1px solid #98DCFF;
+}
+
+/* The header(s) in the right column */
+#rightcol #colhead{
+  width: 598px;
+  text-decoration: underline;
+  margin: 0 auto 0.8em auto;
+}
+
+
+/* Your average paragraph on the page */
+#rightcol p{
+  font-weight: bold;
+  color: #3AB7FF;
+  text-align: justify;
+  width: 550px; 
+  line-height: 2em;
+  margin: auto;
+}
+
+/*indent every paragraph */
+#rightcol p:first-letter{
+  margin-left: 2em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* A fix for the large letter "T" being too far out*/
+#rightcol .t{
+  letter-spacing: -0.2em;
+}
+
+/* Headers in the right column - color */
+#rightcol h1, #rightcol h2, #rightcol h3, #rightcol h4, #rightcol h5, #rightcol h6{
+  color: #3AB7FF;
+}
+
+/*
+ * 
+ * What does a listing look like? Read on! 
+ * 
+ */
+
+/* Each listing box */
+.listing{   	
+   margin: 0.6em 0.25em;  
+   background: none;   
+   text-align: left;
+   border: 1px solid #98DCFF;
+   color: #3AB7FF;
+}
+
+/* The top left corner of each listing */
+.listing .tl{
+  margin: -1px;	/* this moves the corner images over the border. Because of the cascade, need only be defined on the outermost div */
+  background:  url('img/tl-light.png') top left no-repeat; 
+}
+
+/* The top right corner of each listing */
+.listing .tr{
+  background: url('img/tr-light.png') top right no-repeat; 
+}
+
+/* The bottom left corner of each listing */
+.listing .bl{
+  background: url('img/bl-light.png') bottom left no-repeat; 
+}
+
+/* The bottom right corner of each listing */
+.listing .br{
+  background: url('img/br-light.png') bottom right no-repeat; 
+  padding: 18px;
+  text-align: right;
+}
+
+/* The header for each listing */
+.listing .listingheader{
+  text-align: right;
+  font-size: 0.78125em;	/* 16 x 0.78125 =  12px */  
+}
+
+/* The link to each listing */
+.listing .listingheader a{
+  color: #3AB7FF;
+  text-decoration :none;
+  
+}
+
+
+/* The link to each listing */
+.listing .listingheader a:hover{
+  color: #3AB7FF; 
+  text-decoration: underline;
+}
+
+/* The link to each listing */
+.listing .backarrow .arrow{
+  visibility: hidden;
+}
+
+/* The link to each listing */
+.listing .backarrow:hover .arrow{
+  visibility: visible;
+  text-decoration :none;
+}
+
+/*  The reference number of the listing */
+.listing .listingnumber{
+  text-align: right;     
+  color: #98DCFF;  
+}
+
+/* The "exclusive" label */
+.listing .xclusive{
+  text-align: right;
+  color: #ee7800;
+   
+}
+
+/*  Each "cover" image for each listing */
+.listing .imagewrapper .largeimg{  
+  float: left;
+  height: 100px;
+  width: 135px;
+  padding: 0px;
+  margin-top: -3px;
+  padding: 1px;
+  border: 1px solid #98DCFF;  
+}
+
+
+/*  Each "cover" image for each listing */
+.listing .livewrapper .largeimg{  
+  float: left;
+  height: 100px;
+  width: 135px;
+  padding: 0px;
+  margin-top: -3px;
+  padding: 1px;
+  border: 1px solid #98DCFF;  
+}
+
+/* Each "cover" image for each listing when hovered over */
+.listing .livewrapper:hover .largeimg{
+  border: 1px solid #3AB7FF;  
+}
+
+
+/* Format the list of bed/bath/balcony for each listing */
+.listing ul{
+  list-style-type: none;
+  margin: 0;
+  text-align: right;
+}
+
+/* every listing detail looks like this */
+.listing .listingdetail{
+  color: #79aaff;
+}
+
+/* the next block only affects listing details inside of our list */
+.listing ul .listingdetail{
+  font-size: 0.6875em; /* 16 x 0.6875 = 11px */
+}
+
+/* Theback arrow on individual listings */
+.listing .backarrow{
+  width: 100%;
+  text-align: right;
+  color: #3AB7FF;
+  text-decoration: none;
+  font-size: 0.9em;
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 0.6875em; /* 16 x 0.6875 = 11px */
+}
+/* the price tag of each property */
+.listing ul .price{
+  color: #68aa22;
+  font-weight: bold;  
+}
+
+/*
+ *
+ * The footer section
+ *
+ */
+
+#footer{
+  display: block;
+  clear: both;
+  height: 152px;  
+  line-height: 80px;
+  color: #fff;
+  vertical-align: bottom;
+  background: #3AB7FF url("img/footer.png") top no-repeat;
+  color: #fff;
+}
+
+/* links inside the footer */
+#footer a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/* A link in the footer */
+#footer a:hover{
+  text-decoration: underline;
+}
+
+/* A link in the footer when hovere */
+#footer a:visited{
+  color: #efefff;
+}
+
+.scum{
+  display: none;
+}

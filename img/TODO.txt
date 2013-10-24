@@ -1,0 +1,4 @@
+divide images into 3 folders:
+1-uploaded - will create folders per each listing dynamically at 'upload-time'
+2-template - pix used by site template - divide by color scheme (default, clouds, etc)
+(3-edits - pdn files)

@@ -1,0 +1,38 @@
+Microsoft Windows [Version 6.0.6001]
+Copyright (c) 2006 Microsoft Corporation.  All rights reserved.
+
+C:\Users\Moshe>cd "C:\Program Files\MySQL\MySQL Server 5.0\bin
+
+C:\Program Files\MySQL\MySQL Server 5.0\bin>mysql -h localhost -u moshe -p****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 19
+Server version: 5.0.67-community-nt MySQL Community Edition (GPL)
+
+Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
+
+mysql> use listings
+Database changed
+mysql> describe listings
+    -> ;
++-----------------+-------------+------+-----+---------+----------------+
+| Field           | Type        | Null | Key | Default | Extra          |
++-----------------+-------------+------+-----+---------+----------------+
+| listing_id      | int(11)     | NO   | PRI | NULL    | auto_increment |
+| exclusive_agent | varchar(3)  | YES  |     | NULL    |                |
+| title           | varchar(40) | YES  |     | NULL    |                |
+| addr1           | int(11)     | YES  |     | NULL    |                |
+| addr2           | varchar(25) | YES  |     | NULL    |                |
+| city            | varchar(25) | YES  |     | NULL    |                |
+| state           | varchar(2)  | YES  |     | NULL    |                |
+| zip             | int(11)     | YES  |     | NULL    |                |
+| beds            | int(11)     | YES  |     | NULL    |                |
+| baths           | int(11)     | YES  |     | NULL    |                |
+| sq_feet1        | int(11)     | YES  |     | NULL    |                |
+| sq_feet2        | int(11)     | YES  |     | NULL    |                |
+| pix             | varchar(25) | YES  |     | NULL    |                |
+| asking          | int(11)     | YES  |     | NULL    |                |
+| sold_state      | int(1)      | YES  |     | NULL    |                |
++-----------------+-------------+------+-----+---------+----------------+
+15 rows in set (0.00 sec)
+
+mysql> 

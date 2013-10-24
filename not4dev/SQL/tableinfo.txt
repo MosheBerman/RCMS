@@ -1,0 +1,21 @@
+mysql> describe listings
+    -> ;
++------------+-------------+------+-----+---------+----------------+
+| Field      | Type        | Null | Key | Default | Extra          |
++------------+-------------+------+-----+---------+----------------+
+| listing_id | int(11)     | NO   | PRI | NULL    | auto_increment |
+| title      | varchar(40) | YES  |     | NULL    |                |
+| addr1      | int(11)     | YES  |     | NULL    |                |
+| addr2      | varchar(25) | YES  |     | NULL    |                |
+| city       | varchar(25) | YES  |     | NULL    |                |
+| state      | varchar(2)  | YES  |     | NULL    |                |
+| zip        | int(11)     | YES  |     | NULL    |                |
+| beds       | int(11)     | YES  |     | NULL    |                |
+| baths      | int(11)     | YES  |     | NULL    |                |
+| sq_feet1   | int(11)     | YES  |     | NULL    |                |
+| sq_feet2   | int(11)     | YES  |     | NULL    |                |
+| pix        | varchar(25) | YES  |     | NULL    |                |
+| asking     | int(11)     | YES  |     | NULL    |                |
+| sold_state | int(1)      | YES  |     | NULL    |                |
++------------+-------------+------+-----+---------+----------------+
+14 rows in set (0.00 sec)

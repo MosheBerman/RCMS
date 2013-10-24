@@ -1,0 +1,8 @@
+Todo:
+- Finish logon backend interface (try md5 files, database logon verifying, or hard coded verification)
+- Catalog backend
+- catalog frontend
+- admin panel frontend (add, rem,  modify)
+- Image uploader
+- Javascript Lightbox
+- jQuery Effects

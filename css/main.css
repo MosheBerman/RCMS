@@ -1,0 +1,128 @@
+﻿/*The body rules */
+ body{
+   margin:0;
+   padding-top:30px;
+   font-family: Calibri, Arial, Tahoma, sans, sans-serif;   
+ }
+
+body *{
+    clear: both;
+    margin: 0 auto;
+    padding: 3px;
+    width: 90%;
+    text-align: center;
+}
+
+/* 4 types of messages: red, yellow, green and blue */
+.red{
+   width: 90%;
+   background: #ffaaaa;
+   border: 1px solid #ff0000;
+   color: #ff0000;
+ }
+ 
+ .blue{
+    width: 90%;
+    background: #ccccff;
+    border: 1px solid #3333ff;
+    color: #3333ff;
+ }
+ 
+.green{
+ 	background: #66aa66;
+	border: 1px solid #335533;
+	color: #335533;
+}
+ 
+.yellow{
+     width: 90%;
+     color: #eecc00;
+     border: solid 1px #eecc00;
+     background-color: #ffeebb;
+     margin-top: 3px;
+}
+
+
+ 
+ /* some header margin stuff */
+ h1 + h3{
+     margin-top: 3px;
+ }
+ 
+ h1 + div{
+     margin-top: 3px;
+ } 
+ 
+ h3 + div{
+     margin-top: 3px;
+     border-top: 0px;
+ }
+ 
+  h3 + div p{
+       text-align: left; 
+ }
+ 
+* + div{
+      margin-top: 3px;
+ } 
+ 
+ 
+ * + form{
+      width:200px;
+      text-align: right;     
+      margin-top: 3px;
+ } 
+
+ /* The links in the error messages */
+ .errlink{
+   text-decoration: none;
+   color:#cc0000;
+
+ }
+ 
+ .errlink:hover{
+   text-decoration: none;
+   color: #ff0000;
+ }
+ 
+ /* admin panel buttons */
+ 
+ .icon{
+   background-repeat:none;
+   padding: 5px;
+   margin: 0px;
+   text-decoration: none;
+   text-align: center;
+ }
+ 
+.icon img{
+   border: 1px dashed #0000ff;;
+   height: 150px;
+   width: 200px;
+   z-index: 1;
+}
+
+.icon:hover img{
+   border: 1px solid #0000ff;
+}
+
+.icon img + span{
+  margin: auto;
+  clear: both;
+  z-index: 0;
+  width: 200px;
+}
+
+/* some login panel stuff */
+label + input{
+  width: 100px;
+}
+
+#submit{
+  display: block;
+  margin-left;: auto;
+  float; right;
+  clear: left;
+  width: 100px;
+}
+
